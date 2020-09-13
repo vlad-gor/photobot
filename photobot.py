@@ -60,7 +60,7 @@ def image(message):
 def callback_query(call):
     if call.data == "share":
         bot.answer_callback_query(call.id, "Отправляю!")
-        bot.forward_message('-494005119', call.from_user.id, call.message.message_id)
+        bot.forward_message(repost_channel, call.from_user.id, call.message.message_id)
 
 @bot.message_handler()
 def handle_help(message):
@@ -69,4 +69,5 @@ def handle_help(message):
     Присылай фото и он добавит на него подпись. \n 
     ''')
 
-bot.polling()
+if __name__ == '__main__':
+    bot.polling()

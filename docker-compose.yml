@@ -6,7 +6,7 @@ services:
     container_name: photobot
     build:
       context: .
-    command: python main.py
+    command: python photobot.py
     restart: always
 
     env_file:

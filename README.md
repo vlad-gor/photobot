@@ -8,20 +8,20 @@
 
 В файле .env хранятся следующие настройки
 
-IMAGE_DIR = user_images/
-TEXT_FILE = mems.txt
-FONT_FILE = fonts/Lobster.ttf
-REPOST_CHANNEL = 
-TOKEN = 
+IMAGE_DIR = user_images/  
+TEXT_FILE = mems.txt  
+FONT_FILE = fonts/Lobster.ttf  
+REPOST_CHANNEL =   
+TOKEN =   
 
 В REPOST_CHANNEL нужно указать id чата в который пользователю предлагается переслать готовый мем.
 В TOKEN нужно указать токен бота полученный от @BotFather.
 
 ## Установка и запуск на сервере в контейнере Docker
 1. Предполагается что на сервере docker и docker-compose уже установлены и находятся в работоспособном состоянии
-(если нет, см. документацию 
-https://docs.docker.com/engine/install/
-https://docs.docker.com/compose/install/ 
+(если нет, см. документацию   
+https://docs.docker.com/engine/install/  
+https://docs.docker.com/compose/install/   
 )
 
 2. Клонировать репозиторий и перейти в него

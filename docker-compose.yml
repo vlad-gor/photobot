@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+
+  tgbot:
+    container_name: tbot
+    build:
+      context: .
+    command: python main.py
+    restart: always
+
+    env_file:
+      - ".env"
